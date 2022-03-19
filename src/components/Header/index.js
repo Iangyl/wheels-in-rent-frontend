@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';
+import images from './../../assets/images';
 
 const Header = () => {
   return (
@@ -14,20 +15,20 @@ const Header = () => {
           <div className={styles.linksContainer}>
             {
               links.map(link => (
-                <div key={link.id}>
-                  <NavLink
-                    className={styles.link}
-                    activeclassname={styles.activeLink}
-                    to={link.path}
-                  >
+                <NavLink
+                  key={link.id}
+                  className={(navData) => (navData.isActive ? styles.linkActive : styles.link)}
+                  to={link.path}
+                >
+                  <div>
                     {link.title}
-                  </NavLink>
-                </div>
+                  </div>
+                </NavLink>
               ))
             }
           </div>
-          <div>
-            <img alt='avatar' />
+          <div className={styles.userBlock}>
+            <img className={styles.avatar} src={images.user} alt='avatar' />
             <span>Name</span>
           </div>
         </div>

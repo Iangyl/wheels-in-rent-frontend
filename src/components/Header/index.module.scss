@@ -1,7 +1,57 @@
 .Header {
+  --pd: 15px 22px;
   position: fixed;
+  width: 100%;
   background-color: var(--background-col);
   border-top: 5px solid var(--light-green-col);
   box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
   z-index: 100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .mainLink {
+      color: var(--dark1-col);
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 45px;
+    }
+
+    .linksContainer {
+      display: flex;
+      .link {
+        div {
+          padding: 15px 22px;
+          color: var(--dark3-col);
+        }
+      }
+      .link:hover {
+        div {
+          background-color: var(--light-green-col);
+          color: #fff;
+        }
+      }
+      .linkActive {
+        div {
+          padding: 15px 22px;
+          background-color: var(--light-green-col);
+          color: #fff;
+        }
+      }
+    }
+
+    .userBlock {
+      display: flex;
+      align-items: center;
+      padding: 10px 22px;
+      .avatar {
+        width: 24px;
+      }
+      span {
+        margin-left: 10px;
+        color: var(--dark1-col);
+      }
+    }
+  }
 }
