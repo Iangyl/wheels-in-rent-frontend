@@ -17,7 +17,7 @@ const Header = () => {
                 <div key={link.id}>
                   <NavLink
                     className={styles.link}
-                    activeClassName={styles.activeLink}
+                    activeclassname={styles.activeLink}
                     to={link.path}
                   >
                     {link.title}
