@@ -1,5 +1,6 @@
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
     </div>
