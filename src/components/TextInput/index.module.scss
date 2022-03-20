@@ -1,0 +1,16 @@
+.text {
+  width: 100%;
+  line-height: 1.42857143;
+  background-color: #252020;
+  border: none;
+  color: var(--dark4-col);
+  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+  padding: 6px 12px;
+  border-bottom: 2px solid var(--dark5-col);
+}
+
+.text:focus {
+  outline: none;
+  border-color: var(--dark3-col);
+}

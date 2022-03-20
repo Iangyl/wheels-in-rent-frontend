@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';
-import images from './../../assets/images';
+import { icons } from './../../assets/images';
 
 const Header = () => {
   return (
@@ -28,7 +28,7 @@ const Header = () => {
             }
           </div>
           <div className={styles.userBlock}>
-            <img className={styles.avatar} src={images.user} alt='avatar' />
+            <img className={styles.avatar} src={icons.user} alt='avatar' />
             <span>Name</span>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Button from './components/Button';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <div className='App'>
       <Header />
       <Button type='button' placeholder='Button' />
+      <Footer />
     </div>
   );
 }
