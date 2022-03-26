@@ -1,23 +1,17 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import Button from './components/Button';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import React, { Fragment } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
+import { Home } from './pages';
 
 const App = () => {
-  const getRoute = item => (
-    <Route
-      component={item.component}
-      path={item.path}
-      exact={item.exact}
-    />
-  )
-
   return (
-    <div className='App'>
-      <Header />
-      <Button type='button' placeholder='Button' />
-      <Footer />
+    <div className=''>
+      <Routes>
+        <Fragment>
+          <Route exact path='/' element={<Home />}/>
+          <Route path='*' element={<Home />}/>
+        </Fragment>
+      </Routes>
     </div>
   );
 }

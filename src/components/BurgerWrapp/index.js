@@ -8,7 +8,9 @@ const BurgerWrapp = ({ children }) => {
   return (
     <div className={styles.BurgerWrapp}>
       <Header />
+      <div className={styles.content}>
         {children}
+      </div>
       <Footer />
     </div>
   )

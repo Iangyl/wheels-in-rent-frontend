@@ -1,6 +1,6 @@
 .Header {
   --pd: 15px 22px;
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: var(--background-col);
   border-top: 5px solid var(--light-green-col);
