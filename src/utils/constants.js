@@ -1,23 +1,15 @@
-import { pics } from './../assets/images';
+import { images } from '../assets';
 
-const slideImages = [
-  {
-    id: 1,
-    url: pics.car1,
-    caption: 'Slide 1',
-  },
-  {
-    id: 2,
-    url: pics.car2,
-    caption: 'Slide 2',
-  },
-  {
-    id: 3,
-    url: pics.car3,
-    caption: 'Slide 3',
-  },
+const { icons } = images;
+
+const iconsArray = [
+  icons.facebook,
+  icons.twitter,
+  icons.instagram,
 ]
 
-export {
-  slideImages,
+const constants = {
+  iconsArray,
 }
+
+export default constants;

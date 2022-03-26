@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './index.module.scss';
-import { icons } from './../../../assets/images';
+import { constants } from '../../../utils';
 
-const iconsArray = [
-  icons.facebook,
-  icons.twitter,
-  icons.instagram,
-]
+const { iconsArray } = constants;
 
 const InfoBlock = ({
   title,

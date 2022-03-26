@@ -2,7 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';
-import { icons } from './../../assets/images';
+import { images } from '../../assets';
+
+const { icons } = images;
 
 const Header = () => {
   return (

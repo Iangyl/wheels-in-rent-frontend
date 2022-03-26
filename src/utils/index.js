@@ -1,7 +1,5 @@
-import {
-  slideImages,
-} from './constants'
+import constants from './constants';
 
-export const constants = {
-  slideImages,
+export {
+  constants,
 }
