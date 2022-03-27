@@ -15,6 +15,29 @@ const aboutUs = {
 const offers = {
   title: 'Offers',
   text: 'Lorem ipsum dolor sit amet.',
+  offers: [
+    {
+      id: 1,
+      title: 'Family Cars',
+      time: 'weekend',
+      price: 120,
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    },
+    {
+      id: 2,
+      title: 'Luxury & Prestige Cars',
+      time: 'week',
+      price: 150,
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    },
+    {
+      id: 3,
+      title: 'Top Sellers',
+      time: 'weekdays',
+      price: 100,
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    },
+  ]
 }
 
 export {
