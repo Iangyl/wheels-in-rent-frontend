@@ -1,3 +1,36 @@
 .PageBanner {
-  height: 650px;
+  background-position: 0 55%;
+  padding: 10% 0;
+
+  .content {
+    max-width: 570px;
+    margin: 0 auto 0 12%;
+    .textContainer {
+      margin-bottom: 40px;
+      .title {
+        color: white;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        color: var(--light-col);
+        font-weight: 300;
+      }
+    }
+    .buttonContainer {
+      .button {
+        max-width: 140px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--light-col);
+        color: var(--light-col);
+        font-size: 14px;
+        font-family: "Mulish", sans-serif;
+        border-radius: 50px;
+      }
+      .button:hover {
+        background-color: var(--light-col);
+        color: var(--dark5-col);
+      }
+    }
+  }
 }
