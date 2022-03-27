@@ -1,7 +1,7 @@
 import React from 'react';
 import { staticFiles } from '../../assets';
 import { BurgerWrapp, PageBanner } from '../../components';
-import { AboutUs } from './components';
+import { AboutUs, Offers } from './components';
 
 const { homePage } = staticFiles;
 
@@ -10,6 +10,7 @@ const Home = () => {
     <BurgerWrapp>
       <PageBanner {...homePage.banner} />
       <AboutUs {...homePage.aboutUs} />
+      <Offers {...homePage.offers} />
     </BurgerWrapp>
   )
 }
