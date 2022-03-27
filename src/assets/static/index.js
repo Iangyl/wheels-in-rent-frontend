@@ -1,5 +1,6 @@
-import { content } from './homePageBanner';
+import { banner, aboutUs } from './homePage';
 
-export const homePageBanner = {
-  content,
+export const homePage = {
+  banner,
+  aboutUs,
 }

@@ -1,13 +1,15 @@
 import React from 'react';
 import { staticFiles } from '../../assets';
 import { BurgerWrapp, PageBanner } from '../../components';
+import { AboutUs } from './components';
 
-const { homePageBanner } = staticFiles;
+const { homePage } = staticFiles;
 
 const Home = () => {
   return (
     <BurgerWrapp>
-      <PageBanner {...homePageBanner.content} />
+      <PageBanner {...homePage.banner} />
+      <AboutUs {...homePage.aboutUs} />
     </BurgerWrapp>
   )
 }
