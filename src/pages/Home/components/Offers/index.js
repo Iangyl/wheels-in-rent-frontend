@@ -12,20 +12,20 @@ const Offers = ({
       <div className='wrapper'>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.subtitle}>{subtitle}</div>
-      </div>
-      <div>
-        {
-          offers.map(offer => (
-            <OfferItem
-              key={offer.id}
-              image={offer}
-              title={offer.title}
-              text={offer.text}
-              price={offer.price}
-              time={offer.time}
-            />
-          ))
-        }
+        <div className={styles.content}>
+          {
+            offers.map(offer => (
+              <OfferItem
+                key={offer.id}
+                image={offer.image}
+                title={offer.title}
+                text={offer.text}
+                price={offer.price}
+                time={offer.time}
+              />
+            ))
+          }
+        </div>
       </div>
     </div>
   )

@@ -14,13 +14,14 @@ const aboutUs = {
 
 const offers = {
   title: 'Offers',
-  text: 'Lorem ipsum dolor sit amet.',
+  subtitle: 'Lorem ipsum dolor sit amet.',
   offers: [
     {
       id: 1,
       title: 'Family Cars',
       time: 'weekend',
       price: 120,
+      image: pics.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -28,6 +29,7 @@ const offers = {
       title: 'Luxury & Prestige Cars',
       time: 'week',
       price: 150,
+      image: pics.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -35,6 +37,7 @@ const offers = {
       title: 'Top Sellers',
       time: 'weekdays',
       price: 100,
+      image: pics.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
   ]

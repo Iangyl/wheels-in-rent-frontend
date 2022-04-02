@@ -1,0 +1,56 @@
+.OfferItem {
+  max-width: 360px;
+  width: 100%;
+
+  .image {
+    width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+    .title {
+      margin-bottom: 10px;
+      color: var(--dark1-col);
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .text {
+      margin-top: 10px;
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+      line-height: 20px;
+    }
+  }
+  .buttonContainer {
+    padding: 0 10px;
+    margin-top: 30px;
+    .button {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid var(--light-green-col);
+      color: var(--light-green-col);
+      font-size: 14px;
+      font-family: "Mulish", sans-serif;
+      border-radius: 50px;
+    }
+    .button:hover {
+      background-color: var(--light-green-col);
+      color: var(--light-col);
+    }
+  }
+
+}
+
+.Subtitle {
+  color: var(--grey-col);
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+  span {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--light-green-col);
+  }
+}

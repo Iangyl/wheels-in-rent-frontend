@@ -9,6 +9,7 @@ import {
   car1,
   car2,
   car3,
+  car4,
 } from './pictures';
 
 export const icons = {
@@ -22,4 +23,5 @@ export const pics = {
   car1,
   car2,
   car3,
+  car4,
 };
