@@ -43,8 +43,43 @@ const offers = {
   ]
 }
 
+const blog = {
+  title: 'Latest Blog Posts',
+  subtitle: 'Lorem ipsum dolor sit amet.',
+  blogs: [
+    {
+      id: 1,
+      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      author: 'John Doe',
+      time: '12/06/2020 10:30',
+      seenCount: 120,
+      image: pics.car2,
+      link: '/ipsum',
+    },
+    {
+      id: 2,
+      title: 'Tempora molestiae, iste, consequatur unde sint praesentium!',
+      author: 'John Doe',
+      time: '12/06/2020 10:30',
+      seenCount: 105,
+      image: pics.car2,
+      link: '/consequatur',
+    },
+    {
+      id: 3,
+      title: 'A voluptas ratione, error provident distinctio, eaque id officia?',
+      author: 'John Doe',
+      time: '12/06/2020 10:30',
+      seenCount: 58,
+      image: pics.car2,
+      link: '/ratione',
+    },
+  ]
+}
+
 export {
   banner,
   aboutUs,
   offers,
+  blog,
 }

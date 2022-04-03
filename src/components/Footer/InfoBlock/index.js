@@ -15,7 +15,7 @@ const InfoBlock = ({
       <h2 className={styles.top}>
         {
           !title ? (
-            iconsArray.map(item => <img className={styles.iconLinks} src={item} alt='' />)
+            iconsArray.map(item => <img key={item} className={styles.iconLinks} src={item} alt='' />)
           ) : title
         }
       </h2> 

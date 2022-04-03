@@ -2,6 +2,7 @@ export {default as Header} from './Header';
 export {default as Button} from './Button';
 export {default as Footer} from './Footer';
 export {default as OfferItem} from './OfferItem';
+export {default as BlogItem} from './BlogItem';
 export {default as TextInput} from './TextInput';
 export {default as PageBanner} from './PageBanner';
 export {default as BurgerWrapp} from './BurgerWrapp';

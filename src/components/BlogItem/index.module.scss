@@ -1,7 +1,8 @@
-.OfferItem {
-  max-width: 360px;
-  width: 100%;
-  background-color: white;
+.BlogItem {
+  display: grid;
+  grid-template-columns: minmax(auto, 360px);
+  grid-template-rows: 1fr minmax(auto, 150px) minmax(auto, 65px);
+  background-color: var(--background3-col);
 
   .image {
     width: 100%;
@@ -9,24 +10,21 @@
 
   .container {
     padding: 10px;
+    text-align: left;
     .title {
-      margin-bottom: 10px;
       color: var(--dark1-col);
       font-size: 1.5em;
-      text-transform: uppercase;
-      text-align: left;
+      font-weight: bold;
     }
-    .text {
-      margin-top: 10px;
-      text-align: left;
-      font-size: 14px;
-      color: #333;
-      line-height: 20px;
+    .title:hover {
+      animation-name: colorChange;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
     }
   }
   .buttonContainer {
-    padding: 10px 10px 20px 10px;
-    margin-top: 30px;
+    padding: 0 10px 10px 10px;
     .button {
       width: 100%;
       background-color: transparent;
@@ -41,17 +39,13 @@
       color: var(--light-col);
     }
   }
-
 }
 
-.Subtitle {
-  color: var(--grey-col);
-  font-weight: 300;
-  font-size: 18px;
-  text-align: left;
-  span {
-    font-size: 21px;
-    font-weight: 700;
+@keyframes colorChange {
+  from {
+    color: var(--dark1-col);
+  }
+  to {
     color: var(--light-green-col);
   }
 }

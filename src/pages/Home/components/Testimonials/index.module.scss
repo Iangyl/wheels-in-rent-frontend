@@ -1,0 +1,21 @@
+.Testimonials {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--background3-col);
+  .title {
+    color: var(--dark2-col);
+  }
+  .subtitle {
+    color: var(--grey-col);
+    font-weight: 300;
+    font-size: 21px;
+  }
+  .content {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
