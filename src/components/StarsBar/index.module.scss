@@ -1,0 +1,10 @@
+.StarsBar {
+  display: flex;
+  max-width: 73px;
+  justify-content: space-between;
+
+  .star {
+    width: 13px;
+    height: 14px;
+  }
+}
