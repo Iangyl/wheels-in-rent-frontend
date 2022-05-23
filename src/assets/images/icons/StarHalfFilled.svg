@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ffb800;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="30.883" x2="64" y2="33.117" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0f035"/>
+      <stop offset="0.728" stop-color="#f0f035" stop-opacity="0.302"/>
+    </linearGradient>
+  </defs>
+  <image id="Фон" width="64" height="64" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAqUlEQVR4nO3QgQ0AMQyDwHz33zmvTgFSuQmwv93dedh5efzVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaEB1gKAB1QGCBlQHCBpQHSBoQHWAoAHVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaEB1gKAB1QGCBlQHCBpQHSBoQHWAoAHVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaODMzA9VOgR8F5U4SQAAAABJRU5ErkJggg=="/>
+  <path id="Багатокутник_1" data-name="Багатокутник 1" class="cls-1" d="M32,0l8,23.8,24,0.645L44.944,39.8,51.777,64,32,49.689,12.223,64l6.833-24.2L0,24.446,24,23.8Z"/>
+</svg>

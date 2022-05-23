@@ -1,4 +1,4 @@
-import { images } from '../assets';
+import images from '../assets/images';
 
 const { icons } = images;
 
