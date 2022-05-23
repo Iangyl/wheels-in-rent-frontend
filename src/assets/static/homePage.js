@@ -1,9 +1,12 @@
-import { pics } from '../images'
+import images from '../images'
+import { v4 as uuidv4 } from 'uuid';
+
+const {pictures, icons} = images
 
 const banner = {
   title: 'Lorem ipsum dolor sit amet.',
   subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, excepturi.',
-  image: pics.car1,
+  image: pictures.car1,
   button: true,
 }
 
@@ -21,7 +24,7 @@ const offers = {
       title: 'Family Cars',
       time: 'weekend',
       price: 120,
-      image: pics.car4,
+      image: pictures.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -29,7 +32,7 @@ const offers = {
       title: 'Luxury & Prestige Cars',
       time: 'week',
       price: 150,
-      image: pics.car4,
+      image: pictures.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -37,7 +40,7 @@ const offers = {
       title: 'Top Sellers',
       time: 'weekdays',
       price: 100,
-      image: pics.car4,
+      image: pictures.car4,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
   ]
@@ -53,7 +56,7 @@ const blog = {
       author: 'John Doe',
       time: '12/06/2020 10:30',
       seenCount: 120,
-      image: pics.car2,
+      image: pictures.car2,
       link: '/ipsum',
     },
     {
@@ -62,7 +65,7 @@ const blog = {
       author: 'John Doe',
       time: '12/06/2020 10:30',
       seenCount: 105,
-      image: pics.car2,
+      image: pictures.car2,
       link: '/consequatur',
     },
     {
@@ -71,8 +74,55 @@ const blog = {
       author: 'John Doe',
       time: '12/06/2020 10:30',
       seenCount: 58,
-      image: pics.car2,
+      image: pictures.car2,
       link: '/ratione',
+    },
+  ]
+}
+
+const testimonials = {
+  title: 'Testimonials',
+  subtitle: 'from around the world',
+  testimonials: [
+    {
+      id: uuidv4(),
+      name: 'Jack',
+      icon: icons.testimonialAvatar,
+      date: '2022-05-21',
+      feedback: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus culpa laudantium sit dolores quidem at nulla, iure atque laborum! Odit tempora, enim aliquid at modi illum ducimus explicabo soluta.',
+      rate: 4.5,
+    },
+    {
+      id: uuidv4(),
+      name: 'Kate',
+      icon: icons.testimonialAvatar,
+      date: '2019-01-22',
+      feedback: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus culpa laudantium sit dolores quidem at nulla, iure atque laborum! Odit tempora, enim aliquid at modi illum ducimus explicabo soluta.',
+      rate: 5,
+    },
+    {
+      id: uuidv4(),
+      name: 'Brandon',
+      icon: icons.testimonialAvatar,
+      date: '2020-12-01',
+      feedback: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus culpa laudantium sit dolores quidem at nulla, iure atque laborum! Odit tempora, enim aliquid at modi illum ducimus explicabo soluta.',
+      rate: 3,
+    },
+    {
+      id: uuidv4(),
+      name: 'Marie',
+      icon: icons.testimonialAvatar,
+      date: '2020-12-01',
+      feedback: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus culpa laudantium sit dolores quidem at nulla, iure atque laborum! Odit tempora, enim aliquid at modi illum ducimus explicabo soluta.',
+      rate: 2,
+    },
+    {
+      id: uuidv4(),
+      name: 'James',
+      icon: icons.testimonialAvatar,
+      date: '2020-12-01',
+      feedback: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus culpa laudantium sit dolores quidem at nulla, iure atque laborum! Odit tempora, enim aliquid at modi illum ducimus explicabo soluta.',
+      rate: 1.5,
     },
   ]
 }
@@ -82,4 +132,5 @@ export {
   aboutUs,
   offers,
   blog,
+  testimonials,
 }

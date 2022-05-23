@@ -1,0 +1,33 @@
+.text {
+  text-align: left;
+}
+
+.TestimonialItem {
+  max-width: 380px;
+  width: 100%;
+  padding: 56px 57px;
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .headerText {
+      margin-left: 16px;
+      .name {
+        font-size: 18px;
+      }
+      .date {
+        font-size: 14px;
+        color: var(--dark6-col)
+      }
+    }
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .feedback {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--grey-col);
+  }
+}
