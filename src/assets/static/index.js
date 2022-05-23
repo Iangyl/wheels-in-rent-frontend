@@ -1,8 +1,15 @@
-import { banner, aboutUs, offers, blog } from './homePage';
+import {
+  banner,
+  aboutUs,
+  offers,
+  blog,
+  testimonials
+} from './homePage';
 
 export const homePage = {
   banner,
   aboutUs,
   offers,
   blog,
+  testimonials,
 }

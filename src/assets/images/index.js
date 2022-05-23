@@ -1,27 +1,9 @@
-import {
-  user,
-  twitter,
-  instagram,
-  facebook,
-} from './icons';
+import * as icons from './icons';
+import * as pictures from './pictures';
 
-import {
-  car1,
-  car2,
-  car3,
-  car4,
-} from './pictures';
+const images = {
+  icons,
+  pictures,
+}
 
-export const icons = {
-  user,
-  twitter,
-  instagram,
-  facebook,
-};
-
-export const pics = {
-  car1,
-  car2,
-  car3,
-  car4,
-};
+export default images
