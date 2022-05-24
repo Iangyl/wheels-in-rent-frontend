@@ -5,7 +5,6 @@ import routes from './modules/routes/routes';
 import { Home, Fleet } from './pages';
 
 const App = () => {
-  console.log(Fleet)
   const ProtectedRoute = ({user, redirectPath = routes.SIGN_IN, children}) => {
     if (!user) {
       return <Navigate to={redirectPath} replace />;

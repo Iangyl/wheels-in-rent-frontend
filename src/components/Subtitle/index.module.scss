@@ -1,0 +1,11 @@
+.Subtitle {
+  color: var(--grey-col);
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+  span {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--light-green-col);
+  }
+}

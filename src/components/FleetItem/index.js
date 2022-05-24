@@ -1,17 +1,20 @@
 import React from 'react';
-import Button from '../Button';
+import { useNavigate } from 'react-router';
+import routes from '../../modules/routes';
 import Subtitle from '../Subtitle';
+import Button from '../Button';
 import styles from './index.module.scss';
 
-const OfferItem = ({
+const FleetItem = ({
   image,
   title,
   time,
   price,
   text
 }) => {
+  const navigate = useNavigate()
   return (
-    <div className={styles.OfferItem}>
+    <div className={styles.FleetItem}>
       <div>
         <img className={styles.image} src={image} alt='' />
       </div>
@@ -24,12 +27,12 @@ const OfferItem = ({
         <Button
           className={styles.button}
           type='button'
-          placeholder='View Offer'
-          onClick={() => {}}
+          placeholder='View Details'
+          onClick={() => navigate(routes.CAR)}
         />
       </div>
     </div>
   )
 }
 
-export default OfferItem;
+export default FleetItem;

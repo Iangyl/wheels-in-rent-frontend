@@ -1,12 +1,12 @@
 import React from "react";
-import { BurgerWrapp, AboutUs } from "../../components";
+import { BurgerWrapp, AboutUs, ItemsGrid } from "../../components";
 import { fleetPage } from "../../assets/static";
 
 const Fleet = () => {
-  console.log(fleetPage.aboutUs)
   return (
     <BurgerWrapp>
       <AboutUs {...fleetPage.aboutUs} />
+      <ItemsGrid items={fleetPage.fleets} />
     </BurgerWrapp>
   )
 };

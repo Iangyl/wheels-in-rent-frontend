@@ -11,3 +11,6 @@ export {default as Offers} from './Offers';
 export {default as Blog} from './Blog';
 export {default as Testimonials} from './Testimonials';
 export {default as ContactUs} from './ContactUs';
+export {default as Subtitle} from './Subtitle';
+export {default as ItemsGrid} from './ItemsGrid';
+export {default as CharacteristicsTips} from './CharacteristicsTips';

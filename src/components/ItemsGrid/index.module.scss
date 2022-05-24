@@ -1,0 +1,9 @@
+.ItemsGrid {
+  background-color: var(--background3-col);
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
