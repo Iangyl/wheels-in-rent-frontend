@@ -3,6 +3,7 @@
 
 #root {
 	/* colors */
+  --white-col: #ffffff;
 	--grey-col: #757575;
 	--dark-col: #252525;
 	--dark1-col: #454545;
@@ -11,7 +12,8 @@
 	--dark4-col: #909090;
 	--dark5-col: #303030;
 	--dark6-col: #808080;
-	--light-col: #f9f9f9;;
+	--dark7-col: #9f9b99;
+	--light-col: #f9f9f9;
 	--background-col: #fff;
 	--light-green-col: #29ca8e;
 	--background1-col: #252020;
@@ -37,6 +39,10 @@ h1 {
 h2 {
 	font-size: 2em;
 	color: var(--dark2-col);
+}
+
+h2 small {
+  font-size: 65%;
 }
 
 code {
