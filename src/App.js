@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 import routes from './modules/routes/routes';
-import { Home, Fleet } from './pages';
+import { Home, Fleet, ContactUs } from './pages';
 
 const App = () => {
   const ProtectedRoute = ({user, redirectPath = routes.SIGN_IN, children}) => {
@@ -19,6 +19,7 @@ const App = () => {
         <Fragment>
           <Route exact path={routes.HOME} element={<Home />}/>
           <Route exact path={routes.FLEET} element={<Fleet />}/>
+          <Route exact path={routes.CONTACT_US} element={<ContactUs />}/>
           <Route path='*' element={<Home />}/>
         </Fragment>
       </Routes>

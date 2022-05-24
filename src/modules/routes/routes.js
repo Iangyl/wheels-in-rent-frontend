@@ -3,6 +3,7 @@ const routes = {
   FLEET: '/fleet',
   OFFERS: '/offers',
   CAR: '/fleet/car',
+  CONTACT_US: '/contacts',
   SIGN_IN: '/authorization/sign-in',
   SIGN_UP: '/authorization/sign-up',
   ADMIN_DASHBOARD: '/admin/dashboard',
