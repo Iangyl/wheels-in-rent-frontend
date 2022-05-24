@@ -1,22 +1,26 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import routes from '../../modules/routes';
+import routes from '../../modules/routes/routes';
+import CharacteristicsTips from '../CharacteristicsTips';
 import Subtitle from '../Subtitle';
 import Button from '../Button';
 import styles from './index.module.scss';
+import Icon from '../Icon';
 
 const FleetItem = ({
   image,
   title,
   time,
   price,
-  text
+  text,
+  characteristics,
 }) => {
   const navigate = useNavigate()
   return (
     <div className={styles.FleetItem}>
       <div>
-        <img className={styles.image} src={image} alt='' />
+        <Icon className={styles.image} src={image} />
+        <CharacteristicsTips {...characteristics} className={styles.characteristics} />
       </div>
       <div className={styles.container}>
         <h3 className={styles.title}>{title}</h3>
