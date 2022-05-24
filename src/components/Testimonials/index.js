@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import styles from './index.module.scss';
-import TestimonialItem from '../../../../components/TestimonialItem';
-import Carousel from '../../../../components/Carousel';
+import TestimonialItem from './../TestimonialItem';
+import Carousel from './../Carousel';
 
 const Testimonials = ({
   title,

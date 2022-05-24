@@ -1,15 +1,5 @@
-import {
-  banner,
-  aboutUs,
-  offers,
-  blog,
-  testimonials
-} from './homePage';
+import * as homeStatics from './homePage';
+import * as fleetStatics from './fleetPage';
 
-export const homePage = {
-  banner,
-  aboutUs,
-  offers,
-  blog,
-  testimonials,
-}
+export const fleetPage = {...fleetStatics};
+export const homePage = {...homeStatics};

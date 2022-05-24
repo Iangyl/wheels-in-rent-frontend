@@ -2,9 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './index.module.scss';
 
-import images from '../../../../assets/images';
-import Icon from '../../../../components/Icon';
-import Button from '../../../../components/Button';
+import images from '../../assets/images';
+import Icon from './../Icon';
+import Button from './../Button';
 
 const ContactUs = () => {
   const onSubmit = (e) => {

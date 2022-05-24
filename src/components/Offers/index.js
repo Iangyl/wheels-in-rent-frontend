@@ -1,5 +1,5 @@
 import React from 'react';
-import { OfferItem } from '../../../../components';
+import OfferItem from './../OfferItem';
 import styles from './index.module.scss';
 
 const Offers = ({
