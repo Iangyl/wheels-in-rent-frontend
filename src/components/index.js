@@ -14,3 +14,4 @@ export {default as ContactUs} from './ContactUs';
 export {default as Subtitle} from './Subtitle';
 export {default as ItemsGrid} from './ItemsGrid';
 export {default as CharacteristicsTips} from './CharacteristicsTips';
+export {default as LottiePlayer} from './LottiePlayer';
