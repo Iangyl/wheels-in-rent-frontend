@@ -49,3 +49,15 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
+
+input[type="text"],
+input[type="email"] {
+  color: var(--dark7-col);
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+}
