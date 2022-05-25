@@ -1,0 +1,39 @@
+.HeaderEmpty {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-col);
+  border-top: 5px solid var(--light-green-col);
+  box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+  z-index: 100;
+
+  .linksContainer {
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+    .link {
+      div {
+        display: flex;
+        align-items: center;
+        padding: 15px 22px 15px 18px;
+        color: var(--dark3-col);
+      }
+    }
+    .link:hover {
+      div {
+        background-color: var(--light-green-col);
+        color: #fff;
+      }
+    }
+    .linkActive {
+      div {
+        padding: 15px 22px;
+        background-color: var(--light-green-col);
+        color: #fff;
+      }
+    }
+  }
+}

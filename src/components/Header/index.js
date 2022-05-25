@@ -1,13 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';
 import images from '../../assets/images';
+import routes from '../../modules/routes/routes';
 import Icon from '../Icon';
 
 const { icons } = images;
 
 const Header = () => {
+  const user = ''
   return (
     <div className={styles.Header}>
       <div className='wrapper'>
@@ -30,9 +33,25 @@ const Header = () => {
               ))
             }
           </div>
-          <div className={styles.userBlock}>
-            <Icon className={styles.avatar} src={icons.user} />
-            <span>Name</span>
+          <div className={user ? styles.userBlock : styles.linksContainer}>
+            {
+              user ? (
+                <>
+                  <Icon className={styles.avatar} src={icons.user} />
+                  <span>{user}</span>
+                </>
+              ) : (
+                <NavLink
+                  className={(navData) => (navData.isActive ? styles.linkActive : styles.link)}
+                  to={routes.SIGN_IN}
+                >
+                  <div className={styles.signInContainer}>
+                    <img src={icons.lock} className={styles.signInIcon} alt='' />
+                    Sign In
+                  </div>
+                </NavLink>
+              )
+            }
           </div>
         </div>
       </div>

@@ -1,0 +1,55 @@
+.AuthForm {
+  --border: 1px solid var(--light-green-col);
+  max-width: 550px;
+  width: 100%;
+  background-color: var(--background3-col);
+  border: var(--border);
+  border-radius: 15px;
+  padding: 80px 40px;
+
+  .title {
+    margin-bottom: 15px;
+  }
+  .subtitle {
+    margin-bottom: 30px;
+
+    .link {
+      border-radius: 5px;
+      padding: 2.5px;
+      background-color: var(--light-green-col);
+      color: var(--white-col);
+    }
+    .link:hover { 
+      background-color: var(--background3-col);
+      color: var(--light-green-col);
+    }
+  }
+
+  .form {
+    width: 100%;
+    input {
+      margin-bottom: 20px;
+      border: var(--border);
+    }
+
+    .button {
+      display: block;
+      max-width: 220px;
+      margin: 0 auto;
+      width: 100%;
+      height: 50px;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white-col);
+      box-shadow: none;
+      border-radius: 50px;
+      background-color: var(--light-green-col);
+    }
+    .button:hover {
+      color: var(--dark2-col);
+      background-color: var(--background3-col);
+      border: 1px solid var(--light-green-col);
+    }
+  }
+}

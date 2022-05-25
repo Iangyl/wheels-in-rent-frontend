@@ -8,6 +8,8 @@ import {
   ContactUs,
   OffersPage,
   NotFound,
+  SignIn,
+  SignUp,
   PageUnderConstruction,
 } from './pages';
 
@@ -31,8 +33,8 @@ const App = () => {
           <Route exact path={routes.OFFERS} element={<OffersPage />}/>
           <Route exact path={routes.BLOG} element={<PageUnderConstruction />}/>
           <Route exact path={routes.ABOUT_US} element={<PageUnderConstruction />}/>
-          <Route exact path={routes.SIGN_IN} element={<PageUnderConstruction />}/>
-          <Route exact path={routes.SIGN_UP} element={<PageUnderConstruction />}/>
+          <Route exact path={routes.SIGN_IN} element={<SignIn />}/>
+          <Route exact path={routes.SIGN_UP} element={<SignUp />}/>
           <Route
             path={routes.ACCOUNT}
             element={

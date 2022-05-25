@@ -6,9 +6,9 @@ import { AuthForm, HeaderEmpty, LottiePlayer } from "../../components";
 
 const {formTypes, authLottieOptions} = constants;
 
-const SignIn = () => {
+const SignUp = () => {
   return (
-    <div className={styles.SignIn}>
+    <div className={styles.SignUp}>
       <HeaderEmpty />
       <div className={styles.body}>
         <div className={styles.left}>
@@ -18,11 +18,11 @@ const SignIn = () => {
           />
         </div>
         <div className={styles.content}>
-          <AuthForm formType={formTypes.signIn} />
+          <AuthForm formType={formTypes.signUp} />
         </div>
       </div>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

@@ -53,5 +53,16 @@
         color: var(--dark1-col);
       }
     }
+
+    .signInContainer {
+      display: flex;
+      align-items: center;
+
+      .signInIcon {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+    }
   }
 }
