@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';

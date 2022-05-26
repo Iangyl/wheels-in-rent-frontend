@@ -56,7 +56,8 @@ code {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"] {
   color: var(--dark7-col);
   width: 100%;
   height: 38px;

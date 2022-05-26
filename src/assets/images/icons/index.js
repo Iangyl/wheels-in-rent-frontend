@@ -11,7 +11,10 @@ import passenger from "./passenger.svg";
 import volume from "./volume.svg";
 import transmission from "./transmission.svg";
 import arrow from "./arrow.svg";
-import lock from './lock.svg'
+import lock from './lock.svg';
+import blocked from './blocked.svg';
+import ok from './ok.svg';
+import repair from './repair.svg';
 
 export {
   user,
@@ -28,4 +31,7 @@ export {
   transmission,
   arrow,
   lock,
+  ok,
+  repair,
+  blocked,
 };

@@ -17,3 +17,5 @@ export {default as ItemsGrid} from './ItemsGrid';
 export {default as CharacteristicsTips} from './CharacteristicsTips';
 export {default as LottiePlayer} from './LottiePlayer';
 export {default as AuthForm} from './AuthForm';
+export {default as CarInfoGrid} from './CarInfoGrid';
+export {default as DateTimePicker} from './DateTimePicker';

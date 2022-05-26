@@ -1,0 +1,57 @@
+.BookingForm {
+  h3 {
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--grey-col);
+    color: var(--dark-col);
+  }
+  form {
+    .contacts,
+    .datetime,
+    .location {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .buttonContainer,
+    .datetime,
+    .nameFieldContainer,
+    .contacts {
+      margin-top: 20px;
+    }
+    .datetimeItem,
+    .fullName,
+    .contactItem {
+      box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
+    }
+    .datetimeItem:hover,
+    .fullName:hover,
+    .contactItem:hover {
+      border: 1px solid var(--light-green-col);
+    }
+    .datetimeItem,
+    .contactItem {
+      max-width: 300px;
+    }
+
+    .buttonContainer {
+      padding-top: 40px;
+      margin-top: 40px;
+      .button {
+        max-width: 150px;
+        height: 45px;
+        width: 100%;
+        background-color: var(--white-col);
+        color: var(--light-green-col);
+        font-size: 14px;
+        font-family: "Mulish", sans-serif;
+        border: 1px solid var(--light-green-col);
+        border-radius: 50px;
+      }
+      .button:hover {
+        background-color: var(--light-green-col);
+        color: var(--light-col);
+      }
+    }
+  }
+}

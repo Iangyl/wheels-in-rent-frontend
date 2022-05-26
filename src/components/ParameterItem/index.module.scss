@@ -1,0 +1,13 @@
+.ParameterItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  line-height: 28px;
+  .sign {
+    font-weight: 700;
+  }
+  .value {
+    display: block;
+    text-align: right;
+  }
+}

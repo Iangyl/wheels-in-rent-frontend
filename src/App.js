@@ -10,6 +10,7 @@ import {
   NotFound,
   SignIn,
   SignUp,
+  Car,
   PageUnderConstruction,
 } from './pages';
 
@@ -33,6 +34,7 @@ const App = () => {
           <Route exact path={routes.OFFERS} element={<OffersPage />}/>
           <Route exact path={routes.BLOG} element={<PageUnderConstruction />}/>
           <Route exact path={routes.ABOUT_US} element={<PageUnderConstruction />}/>
+          <Route exact path={routes.CAR} element={<Car />}/>
           <Route exact path={routes.SIGN_IN} element={<SignIn />}/>
           <Route exact path={routes.SIGN_UP} element={<SignUp />}/>
           <Route
@@ -59,6 +61,7 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+          <Route path={routes.PAGE_UNDER_CONSTRUCTION} element={<PageUnderConstruction />}/>
           <Route path={routes.NOT_FOUND} element={<NotFound />}/>
           <Route path='*' element={<NotFound />}/>
         </Fragment>

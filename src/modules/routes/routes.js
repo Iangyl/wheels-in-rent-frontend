@@ -12,6 +12,7 @@ const routes = {
   BLOG: '/blog',
   ABOUT_US: '/about',
   ACCOUNT: '/account',
+  PAGE_UNDER_CONSTRUCTION: '/maintaining'
 }
 
 export default routes;

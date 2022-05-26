@@ -1,0 +1,65 @@
+.CarInfoGrid {
+  background-color: var(--background3-col);
+  padding: 100px 0;
+
+  .parameters {
+    display: flex;
+    justify-content: space-evenly;
+
+    .iconContainer {
+      .image {
+        max-width: 550px;
+        width: 100%;
+      }
+      .statusBlock {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--white-col);
+        padding: 20px;
+        .price, .status {
+          font-size: 32px;
+          font-weight: 700;
+          color: var(--light-green-col);
+        }
+        .price {
+          span {
+            color: var(--dark-col);
+          }
+        }
+        .status {
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          
+          .icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--grey-col);
+    h2 { margin-bottom: 20px;}
+    div {
+      font-size: 21px;
+      color: var(--grey-col);
+    }
+  }
+
+  .book {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white-col);
+    border: 1px solid var(--grey-col);
+  }
+}

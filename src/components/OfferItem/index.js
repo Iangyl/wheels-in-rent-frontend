@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
+import routes from '../../modules/routes/routes';
 import Button from '../Button';
 import Subtitle from '../Subtitle';
 import styles from './index.module.scss';
@@ -10,6 +12,7 @@ const OfferItem = ({
   price,
   text
 }) => {
+  const navigate = useNavigate();
   return (
     <div className={styles.OfferItem}>
       <div>
@@ -25,7 +28,7 @@ const OfferItem = ({
           className={styles.button}
           type='button'
           placeholder='View Offer'
-          onClick={() => {}}
+          onClick={() => {navigate(routes.PAGE_UNDER_CONSTRUCTION)}}
         />
       </div>
     </div>

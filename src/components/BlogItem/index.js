@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
+import routes from '../../modules/routes/routes';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 import styles from './index.module.scss';
@@ -11,6 +13,7 @@ const BlogItem = ({
   seenCount,
   link,
 }) => {
+  const navigate = useNavigate()
   return (
     <div className={styles.BlogItem}>
       <div>
@@ -24,7 +27,7 @@ const BlogItem = ({
           className={styles.button}
           type='button'
           placeholder='Read More'
-          onClick={() => { }}
+          onClick={() => {navigate(routes.PAGE_UNDER_CONSTRUCTION)}}
         />
       </div>
     </div>
