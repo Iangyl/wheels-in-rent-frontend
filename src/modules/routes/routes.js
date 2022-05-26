@@ -7,7 +7,7 @@ const routes = {
   SIGN_IN: '/authorization/sign-in',
   SIGN_UP: '/authorization/sign-up',
   ADMIN_DASHBOARD: '/admin/dashboard',
-  ADMIN_CREATE_CAR: '/admin/add-car',
+  DATA_ADMINISTRATION: '/admin/administration',
   NOT_FOUND: '/not-found#404',
   BLOG: '/blog',
   ABOUT_US: '/about',

@@ -11,6 +11,7 @@ import {
   SignIn,
   SignUp,
   Car,
+  AdminPage,
   PageUnderConstruction,
 } from './pages';
 
@@ -41,7 +42,7 @@ const App = () => {
             path={routes.ACCOUNT}
             element={
               <ProtectedRoute user={user}>
-                <PageUnderConstruction />
+                <AdminPage />
               </ProtectedRoute>
             }
           />
@@ -49,15 +50,15 @@ const App = () => {
             path={routes.ADMIN_DASHBOARD}
             element={
               <ProtectedRoute user={user}>
-                <PageUnderConstruction />
+                <AdminPage />
               </ProtectedRoute>
             }
           />
           <Route
-            path={routes.ADMIN_CREATE_CAR}
+            path={routes.DATA_ADMINISTRATION}
             element={
               <ProtectedRoute user={user}>
-                <PageUnderConstruction />
+                <AdminPage />
               </ProtectedRoute>
             }
           />

@@ -1,0 +1,29 @@
+.Dashboard {
+  padding: 60px 20px 60px 20px;
+
+  h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--grey-col);
+  }
+
+  .statisticsContainer {
+    .donutChart {
+      display: flex;
+      width: 100%;
+      padding-top: 40px;
+
+      .profitSign {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 64px;
+        font-weight: 700;
+        span {
+          color: var(--light-green-col);
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}

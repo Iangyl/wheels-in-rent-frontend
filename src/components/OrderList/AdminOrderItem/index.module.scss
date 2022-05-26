@@ -1,0 +1,15 @@
+.AdminOrderItem {
+  width: 80%;
+  border-radius: 25px;
+  border: 1px solid var(--light-green-col);
+  .customBorderTop {
+    width: 100%;
+    height: 10px;
+    background-color: var(--light-green-col);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .body {
+    display: flex;
+  }
+}

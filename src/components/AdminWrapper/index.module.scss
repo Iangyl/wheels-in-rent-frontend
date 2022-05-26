@@ -1,0 +1,21 @@
+.AdminWrapper {
+  .tabsContainer {
+    display: flex;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    .link,
+    .linkActive {
+      color: var(--dark-col);
+      .tab {
+        padding: 4px 16px;
+      }
+    }
+    .link {
+      border-bottom: 3px solid var(--grey-col);
+    }
+    .linkActive {
+      border-top: 3px solid var(--light-green-col);
+    }
+  }
+}
