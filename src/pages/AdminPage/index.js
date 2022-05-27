@@ -1,11 +1,14 @@
 import React from "react";
+import { useLocation } from "react-router";
 import Dashboard from './Dashboard';
 import DataAdministration from './DataAdministration';
 import {BurgerWrapp, AdminWrapper, AboutUs} from '../../components';
 
 const AdminPage = () => {
   const currentPage = 'Dashboard';
-  const tab = 'dashboard';
+  const {pathname} = useLocation();
+  const array = pathname.split('/'); 
+  const tab = array[array.length-1];
   return (
     <BurgerWrapp>
       <AboutUs title='Admin Page' titleType='h1' />
