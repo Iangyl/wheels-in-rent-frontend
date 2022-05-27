@@ -12,3 +12,4 @@ export const errorPage = {...errorStatics};
 export const contactUsPage = {...contactUsStatics};
 export const carPage = {...carStatics};
 export {default as cities} from './cities.json';
+export {default as orders} from './orders.json';

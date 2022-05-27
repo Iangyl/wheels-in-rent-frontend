@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Chart from "react-apexcharts";
+import {staticFiles} from '../../../assets';
+import {OrderList} from '../../../components';
+
+const {orders} = staticFiles;
 
 const options = {
   chart: {
@@ -60,7 +64,7 @@ const Dashboard = () => {
       </div>
       <h3>Orders</h3>
       <div className={styles.ordersContainer}>
-        
+        <OrderList data={orders} accessType='admin' />
       </div>
     </div>
   );

@@ -10,11 +10,11 @@ const OrderList = ({data, accessType}) => {
       {
         accessType === 'admin' ? (
           data.map(item => 
-            <AdminOrderItem />
+            <AdminOrderItem {...item} className={styles.items} />
           )
         ) : (
           data.map(item => 
-            <UserOrderItem />
+            <UserOrderItem {...item} className={styles.items} />
           )
         )
       }

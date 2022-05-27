@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "user": "Volodymyr",
+    "car": "Lexus",
+    "start_date": "2022-05-12",
+    "end_date": "2022-06-30",
+    "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
+    "return_place": "Kyiv, Peremohy district, 105",
+    "price": 300,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "user": "Volodymyr",
+    "car": "BMW",
+    "start_date": "2022-05-12",
+    "end_date": "2022-06-30",
+    "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
+    "return_place": "Kyiv, Peremohy district, 105",
+    "price": 200,
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "user": "Volodymyr",
+    "car": "Ford",
+    "start_date": "2022-05-12",
+    "end_date": "2022-06-30",
+    "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
+    "return_place": "Kyiv, Peremohy district, 105",
+    "price": 70,
+    "status": "closed"
+  },
+  {
+    "id": 4,
+    "user": "Volodymyr",
+    "car": "Opel",
+    "start_date": "2022-05-12",
+    "end_date": "2022-06-30",
+    "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
+    "return_place": "Kyiv, Peremohy district, 105",
+    "price": 50,
+    "status": "denied"
+  }
+]
