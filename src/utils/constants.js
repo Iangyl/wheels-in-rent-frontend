@@ -18,10 +18,20 @@ const authLottieOptions = {
   height: 650,
 }
 
+const statuses = {
+  accepted: 'accepted',
+  finished: 'finished',
+  denied: 'denied',
+  pending: 'pending',
+  crashed: 'crashed',
+  error: 'error',
+}
+
 const constants = {
   iconsArray,
   formTypes,
   authLottieOptions,
+  statuses,
 }
 
 

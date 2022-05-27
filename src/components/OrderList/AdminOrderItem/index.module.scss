@@ -1,11 +1,9 @@
 .AdminOrderItem {
   width: 80%;
   border-radius: 25px;
-  border: 1px solid var(--light-green-col);
   .customBorderTop {
     width: 100%;
     height: 20px;
-    background-color: var(--light-green-col);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -34,6 +32,10 @@
       .id {
         text-align: center;
       }
+      .price {
+        width: 100%;
+        text-align: left;
+      }
 
       .value {
         font-weight: 700;
@@ -49,6 +51,134 @@
       .firstPair {
         margin-bottom: 12px;
       }
+
+      .status {
+        width: 100%;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 38px;
+        text-align: right;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 30px 0;
+    margin-right: 20px;
+    .button {
+      max-width: 150px;
+      height: 45px;
+      width: 100%;
+      background-color: var(--white-col);
+      color: var(--light-green-col);
+      font-size: 14px;
+      font-family: "Mulish", sans-serif;
+      border: 1px solid var(--light-green-col);
+      border-radius: 50px;
+    }
+    .button:hover {
+      background-color: var(--light-green-col);
+      color: var(--light-col);
+    }
+  }
+}
+
+.accepted {
+  border-bottom: 1px solid var(--light-blue-col);
+  .customBorderTop {
+    background-color: var(--light-blue-col);
+  }
+  .status {
+    color: var(--light-blue-col);
+  }
+  .footer
+  {.button {
+    color: var(--light-blue-col);
+    border: 1px solid var(--light-blue-col);
+  }
+  .button:hover {
+    background-color: var(--light-blue-col);
+    color: var(--light-col);
+  }}
+}
+
+.finished {
+  border-bottom: 1px solid var(--light-green-col);
+  .customBorderTop {
+    background-color: var(--light-green-col);
+  }
+  .status {
+    color: var(--light-green-col)
+  }
+  .footer
+  {.button {
+    color: var(--light-green-col);
+    border: 1px solid var(--light-green-col);
+  }
+  .button:hover {
+    background-color: var(--light-green-col);
+    color: var(--light-col);
+  }}
+}
+
+.denied {
+  border-bottom: 1px solid var(--dangerous-col);
+  .customBorderTop {
+    background-color: var(--dangerous-col);
+  }
+  .status {
+    color: var(--dangerous-col);
+  }
+  .footer
+  {.button {
+    color: var(--dangerous-col);
+    border: 1px solid var(--dangerous-col);
+  }
+  .button:hover {
+    background-color: var(--dangerous-col);
+    color: var(--light-col);
+  }}
+}
+
+.pending {
+  border-bottom: 1px solid var(--yellow-col);
+  .customBorderTop {
+    background-color: var(--yellow-col);
+  }
+  .status {
+    color: var(--yellow-col); 
+  }
+  .footer {
+    .button {
+      color: var(--yellow-col);
+      border: 1px solid var(--yellow-col);
+    }
+    .button:hover {
+      background-color: var(--yellow-col);
+      color: var(--light-col);
+    }
+  }
+}
+
+
+.crashed {
+  border-bottom: 1px solid var(--dark-col);
+  .customBorderTop {
+    background-color: var(--dark-col);
+  }
+  .status {
+    color: var(--dark-col);
+  }
+  .footer {
+    .button {
+      color: var(--dark-col);
+      border: 1px solid var(--dark-col);
+    }
+    .button:hover {
+      background-color: var(--dark-col);
+      color: var(--light-col);
     }
   }
 }

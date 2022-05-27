@@ -15,11 +15,17 @@ import lock from './lock.svg';
 import blocked from './blocked.svg';
 import ok from './ok.svg';
 import repair from './repair.svg';
+import keyTransfer from './accepted.svg';
+import pending from './pending.svg';
+import orderError from './orderError.svg';
 
 export {
   user,
   twitter,
   instagram,
+  orderError,
+  keyTransfer,
+  pending,
   facebook,
   star_filled,
   star_half_filled,

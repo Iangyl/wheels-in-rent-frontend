@@ -1,6 +1,15 @@
-import React from "react";
+import React, {useMemo} from "react";
 import classNames from "classnames";
 import styles from "./index.module.scss";
+
+import Button from '../../Button';
+import {constants} from '../../../utils';
+
+const {statuses} = constants;
+
+const BUTTON_CLOSE_ORDER = 'Close';
+const BUTTON_ACCEPT_ORDER = 'Accept';
+const BUTTON_DENIE_ORDER = 'Denie';
 
 const AdminOrderItem = ({
   id,
@@ -14,8 +23,11 @@ const AdminOrderItem = ({
   status,
   className,
 }) => {
+  const color = useMemo(() => {
+    return statuses[status] ?? statuses.crashed
+  }, [status])
   return (
-    <div className={classNames(styles.AdminOrderItem, className)}>
+    <div className={classNames(styles.AdminOrderItem, className, styles[color])}>
       <div className={styles.customBorderTop} />
       <div className={styles.body}>
         <div className={classNames(styles.cell)}>
@@ -62,11 +74,25 @@ const AdminOrderItem = ({
           </div>
         </div>
         <div className={classNames(styles.cell)}>
-          <div className={styles.value}>
-            <div>User Name</div>
-            {user}
+          <div className={styles.status}>
+            {status}
           </div>
         </div>
+      </div>
+      <div className={styles.footer}>
+        {
+          statuses[status] === statuses.pending
+            ? (
+                <>
+                  <Button type='button' placeholder={BUTTON_DENIE_ORDER} onClick={() => {}} className={styles.button} />
+                  <Button type='button' placeholder={BUTTON_ACCEPT_ORDER} onClick={() => {}} className={styles.button} />
+                </>
+            ) : statuses[status] === statuses.accepted
+                ? (
+                  <Button type='button' placeholder={BUTTON_CLOSE_ORDER} onClick={() => {}} className={styles.button} />
+                ) : ''
+        }
+        <Button type='button' placeholder='View Details' onClick={() => {}} className={styles.button} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@
     "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
     "return_place": "Kyiv, Peremohy district, 105",
     "price": 300,
-    "status": "active"
+    "status": "accepted"
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
     "delivery_place": "Zhytomyr, Velyka Berdychivska, 14",
     "return_place": "Kyiv, Peremohy district, 105",
     "price": 70,
-    "status": "closed"
+    "status": "finished"
   },
   {
     "id": 4,
