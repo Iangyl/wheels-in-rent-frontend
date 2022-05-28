@@ -1,0 +1,49 @@
+.CarForm {
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid var(--grey-col);
+  border-radius: 15px;
+  background-color: var(--white-col);
+  padding: 30px;
+
+  h3 {
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--grey-col);
+    color: var(--dark-col);
+  }
+
+  .form {
+    textarea,
+    input {
+      border: 1px solid transparent;
+      box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
+      margin-bottom: 25px;
+    }
+    textarea:hover,
+    input:hover {
+      border-color: var(--dark-col);
+    }
+    .description {
+      min-height: 150px;
+      text-align: left;
+    }
+    .button {
+      display: block;
+      margin-left: auto;
+      max-width: 150px;
+      height: 45px;
+      width: 100%;
+      background-color: var(--white-col);
+      color: var(--dark-col);
+      font-size: 14px;
+      font-family: "Mulish", sans-serif;
+      border: 1px solid var(--dark-col);
+      border-radius: 50px;
+    }
+    .button:hover {
+      background-color: var(--dark-col);
+      color: var(--light-col);
+    }
+  }
+}

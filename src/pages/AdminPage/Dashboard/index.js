@@ -1,49 +1,12 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Chart from "react-apexcharts";
+import { constants } from "../../../utils";
 import {staticFiles} from '../../../assets';
 import {OrderList} from '../../../components';
 
 const {orders} = staticFiles;
-
-const options = {
-  chart: {
-    type: "donut",
-  },
-  series: [10, 15, 17, 5, 18, 32, 8, 12, 32, 14, 11],
-  labels: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "November",
-    "December",
-  ],
-  dataLabels: {
-    enabled: true,
-  },
-  plotOptions: {
-    pie: {
-      customScale: 1,
-      donut: {
-        labels: {
-          show: true,
-          name: {
-            show: true,
-          },
-          value: {
-            show: true,
-          },
-        },
-      },
-    },
-  },
-};
+const {chartOptions: options} = constants;
 
 const Dashboard = () => {
   return (

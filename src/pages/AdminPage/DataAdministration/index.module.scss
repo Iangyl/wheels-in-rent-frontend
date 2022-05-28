@@ -1,0 +1,15 @@
+.DataAdministration {
+  padding: 60px 20px 60px 20px;
+
+  h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--grey-col);
+  }
+
+  .brandsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 20px;
+  }
+}
