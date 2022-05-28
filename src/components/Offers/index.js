@@ -2,6 +2,8 @@ import React from 'react';
 import OfferItem from './../OfferItem';
 import styles from './index.module.scss';
 
+import Pagination from 'rc-pagination';
+
 const Offers = ({
   title,
   subtitle,
@@ -25,6 +27,9 @@ const Offers = ({
               />
             ))
           }
+        </div>
+        <div className={styles.paginationContainer}>
+          <Pagination className="ant-pagination" pageSize={6} total={25} />
         </div>
       </div>
     </div>
