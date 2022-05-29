@@ -6,7 +6,7 @@ const Fleet = () => {
   return (
     <BurgerWrapp>
       <AboutUs {...fleetPage.aboutUs} />
-      <ItemsGrid items={fleetPage.fleets} />
+      <ItemsGrid items={fleetPage.fleets} mode='fleet' />
     </BurgerWrapp>
   )
 };
