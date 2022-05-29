@@ -4,28 +4,30 @@ import { v4 as uuidv4 } from 'uuid';
 const {pictures, icons} = images
 
 const banner = {
-  title: 'Lorem ipsum dolor sit amet.',
-  subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, excepturi.',
-  image: pictures.car1,
+  title: 'Let’s find your ideal car',
+  subtitle: 'Better than us only helicopters!',
+  image: pictures.banner,
   button: true,
 }
 
 const aboutUs = {
   title: 'About Us',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias ipsa veritatis nihil iusto maiores natus dolor, a reiciendis corporis obcaecati ex. Totam assumenda impedit aut eum, illum distinctio saepe explicabo. Consequuntur molestiae similique id quos, quasi quas perferendis laboriosam, fugit natus odit totam! Id dolores saepe, sint debitis rerum dolorem tempora aliquid, pariatur enim nisi. Quia ab iusto assumenda.',
+  text: `Looking for ways to spend your holiday? Why not go on a US car rental tour. The United States has some indefinable quality that makes it perfect for road trips. Cruising down the interstate with a USA car hire and the wind in your hair, your favorite tunes playing and miles of open road ahead has to be the ideal start to any adventure. The sheer diversity of landscapes and cultures within the continental United States alone makes for myriad tour opportunities, no matter what kind of journey you’re after.
+
+  You can’t go wrong with a car rental USA. There’s more to it than giving you the freedom to explore this colorful country at your leisure - once you set out, the whole of the United States is your oyster. It doesn’t matter whether you’re planning a coastal journey through the seaside towns of New England, traversing the vast plains of the Midwest, or cruising California’s Big Sur, when you rent a car in the US you’re bound for an unforgettable adventure.`,
   titleType: 'h2'
 }
 
 const offers = {
   title: 'Offers',
-  subtitle: 'Lorem ipsum dolor sit amet.',
+  subtitle: 'The best suggestion of week for you!',
   offers: [
     {
       id: 1,
       title: 'Family Cars',
       time: 'weekend',
       price: 120,
-      image: pictures.car4,
+      image: pictures.crossover,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -33,7 +35,7 @@ const offers = {
       title: 'Luxury & Prestige Cars',
       time: 'week',
       price: 150,
-      image: pictures.car4,
+      image: pictures.crossover,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
     {
@@ -41,7 +43,7 @@ const offers = {
       title: 'Top Sellers',
       time: 'weekdays',
       price: 100,
-      image: pictures.car4,
+      image: pictures.crossover,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
     },
   ]

@@ -4,18 +4,18 @@ const {pictures} = images
 
 export const aboutUs = {
   title: 'Offers',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, alias.',
+  text: 'The best offers from our company!',
   titleType: 'h1'
 }
 
 export const offers = [
   {
     id: 1,
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Weekend offer. AUDI.',
     time: 'weekend',
     price: 120,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    image: pictures.offer1,
+    text: 'The fastest audi only for you!',
     characteristics: {
       sitsQuantity: 5,
       transmissionType: 'mechanic',
@@ -25,11 +25,11 @@ export const offers = [
   },
   {
     id: 2,
-    title: 'Animi eligendi minus',
+    title: 'Luxury car',
     time: 'week',
     price: 150,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    image: pictures.offer2,
+    text: 'Luxury cars at low prices.',
     characteristics: {
       sitsQuantity: 2,
       transmissionType: 'automatic',
@@ -39,56 +39,14 @@ export const offers = [
   },
   {
     id: 3,
-    title: 'Rerum accusantium',
+    title: 'Best cars offer',
     time: 'weekdays',
     price: 100,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
+    image: pictures.offer3,
+    text: 'Any car of your choice.',
     characteristics: {
       sitsQuantity: 7,
       transmissionType: 'mechanic',
-      volumeAmount: 225,
-      doorsQuantity: 5,
-    }
-  },
-  {
-    id: 4,
-    title: 'Deleniti magni cupiditate',
-    time: 'weekdays',
-    price: 180,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
-    characteristics: {
-      sitsQuantity: 7,
-      transmissionType: 'mechanic',
-      volumeAmount: 225,
-      doorsQuantity: 5,
-    }
-  },
-  {
-    id: 5,
-    title: 'Voluptate officiis nesit',
-    time: 'weekdays',
-    price: 110,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
-    characteristics: {
-      sitsQuantity: 7,
-      transmissionType: 'automatic',
-      volumeAmount: 225,
-      doorsQuantity: 5,
-    }
-  },
-  {
-    id: 6,
-    title: 'Lorem ipsum dolor sit amet.',
-    time: 'weekdays',
-    price: 110,
-    image: pictures.car4,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta voluptas quia dolor fuga odit.',
-    characteristics: {
-      sitsQuantity: 7,
-      transmissionType: 'automatic',
       volumeAmount: 225,
       doorsQuantity: 5,
     }

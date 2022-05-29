@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './index.module.scss';
 
-import FleetItem from '../FleetItem';
+import OfferItem from '../OfferItem';
 import Pagination from 'rc-pagination';
 
 const ItemsGrid = ({items = []}) => {
@@ -11,7 +11,7 @@ const ItemsGrid = ({items = []}) => {
         <div className={styles.container}>
           {
             items.map(item => (
-              <FleetItem {...item} />
+              <OfferItem {...item} />
             ))
           }
         </div>

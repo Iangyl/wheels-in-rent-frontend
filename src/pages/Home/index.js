@@ -11,7 +11,7 @@ const Home = () => {
       <PageBanner {...homePage.banner} />
       <AboutUs {...homePage.aboutUs} />
       <Offers {...homePage.offers} />
-      <Blog {...homePage.blog} />
+      {/* <Blog {...homePage.blog} /> */}
       <Testimonials {...homePage.testimonials} />
       <ContactUs />
     </BurgerWrapp>
