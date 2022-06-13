@@ -1,4 +1,4 @@
-import React, {createElement} from 'react';
+import {createElement} from 'react';
 import styles from './index.module.scss';
 
 const AboutUs = ({

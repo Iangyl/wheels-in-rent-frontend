@@ -38,7 +38,7 @@ const AuthForm = ({
           </>
         )}
       </div>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={event => handleSubmit(event)}>
         {formType !== "sign_in" ? (
           <input
             value={name}

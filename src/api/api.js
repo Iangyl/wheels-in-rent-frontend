@@ -22,7 +22,7 @@ const api = (url = '', method = '', data = {}, authorization = true) => {
       throw error
     }
   })
-
+  
   return axios(options)
 }
 

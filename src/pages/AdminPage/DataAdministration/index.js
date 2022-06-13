@@ -2,8 +2,6 @@ import React from "react";
 import styles from './index.module.scss';
 
 import {CommonDataForm, DataHeap, ModelForm, CarForm} from '../../../components';
-import { staticFiles } from "../../../assets";
-
 
 const DataAdministration = () => {
   return (

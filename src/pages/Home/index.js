@@ -1,7 +1,7 @@
 import React from 'react';
 import { staticFiles } from '../../assets';
 import { BurgerWrapp, PageBanner } from '../../components';
-import { AboutUs, Offers, Blog, Testimonials, ContactUs } from '../../components';
+import { AboutUs, Offers, /* Blog, */ Testimonials, ContactUs } from '../../components';
 
 const { homePage } = staticFiles;
 
