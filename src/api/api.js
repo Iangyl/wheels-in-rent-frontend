@@ -12,7 +12,7 @@ const api = (url = '', method = '', data = {}, authorization = true) => {
   }
 
   if (authorization) {
-    options.headers.token = JSON.parse(JSON.parse(state)?.session)?.token
+    options.headers.authorization = 'Bearer ' + JSON.parse(JSON.parse(state)?.session)?.token
   }
 
   axios.interceptors.response.use(response => response, error => {

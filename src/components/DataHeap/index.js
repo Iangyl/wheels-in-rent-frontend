@@ -10,11 +10,11 @@ const Label = ({name}) => {
   }, [])
 
   return (
-    <div style={{backgroundColor: color}}>{name}</div>
+    <div className={styles.label} style={{backgroundColor: color}}>{name}</div>
   )
 }
 
-const DataHeap = ({data}) => {
+const DataHeap = ({ data }) => {
   const [search, setSearch] = useState('');
   
   return (
