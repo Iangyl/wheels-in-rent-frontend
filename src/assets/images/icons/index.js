@@ -21,9 +21,11 @@ import orderError from './orderError.svg';
 import error from './error.svg';
 import success from './success.svg';
 import warning from './warning.svg';
+import unlocked from './unlocked.svg';
 
 export {
   user,
+  unlocked,
   twitter,
   instagram,
   orderError,

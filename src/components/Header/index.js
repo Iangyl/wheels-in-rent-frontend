@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import links from './links.config';
 import styles from './index.module.scss';
 import images from '../../assets/images';
 import routes from '../../modules/routes/routes';
 import Icon from '../Icon';
+import {useAppSelector} from '../../modules/store/hooks';
 
 const { icons } = images;
 
 const Header = () => {
-  const user = ''
+  const {token, user} = useAppSelector(state => state.session);
+
+  const link = useMemo(() => {
+    if (user?.role === 'ADMIN') return routes.ADMIN_DASHBOARD
+    else return routes.PAGE_UNDER_CONSTRUCTION
+  }, [user?.role])
+
   return (
     <div className={styles.Header}>
       <div className='wrapper'>
@@ -34,11 +41,16 @@ const Header = () => {
           </div>
           <div className={user ? styles.userBlock : styles.linksContainer}>
             {
-              user ? (
-                <>
-                  <Icon className={styles.avatar} src={icons.user} />
-                  <span>{user}</span>
-                </>
+              token ? (
+                <NavLink
+                  className={(navData) => (navData.isActive ? styles.linkActive : styles.link)}
+                  to={link}
+                >
+                  <div className={styles.signInContainer}>
+                    <Icon className={styles.avatar} src={icons.user} />
+                    <span>{user?.user_name}</span>
+                  </div>
+                </NavLink>
               ) : (
                 <NavLink
                   className={(navData) => (navData.isActive ? styles.linkActive : styles.link)}

@@ -17,7 +17,7 @@ import {
 } from "./pages";
 
 const App = () => {
-  const session = useAppSelector(state => state.session);
+  const {token, user} = useAppSelector(state => state.session);
   const ProtectedRoute = ({
     role,
     redirectPath = routes.SIGN_IN,
@@ -61,7 +61,7 @@ const App = () => {
         <Route
           path={routes.ACCOUNT}
           element={
-            <ProtectedRoute session={session.role}>
+            <ProtectedRoute role={user?.role}>
               <AdminPage />
             </ProtectedRoute>
           }
@@ -69,7 +69,7 @@ const App = () => {
         <Route
           path={routes.ADMIN_DASHBOARD}
           element={
-            <ProtectedRoute session={session.role}>
+            <ProtectedRoute role={user?.role}>
               <AdminPage />
             </ProtectedRoute>
           }
@@ -77,7 +77,7 @@ const App = () => {
         <Route
           path={routes.DATA_ADMINISTRATION}
           element={
-            <ProtectedRoute session={session.role}>
+            <ProtectedRoute role={user?.role}>
               <AdminPage />
             </ProtectedRoute>
           }

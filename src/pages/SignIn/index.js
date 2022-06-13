@@ -25,7 +25,7 @@ const SignIn = () => {
 
     try {
       const {data} = await signIn(formData);
-      dispatch(login({token: data.token}));
+      dispatch(login({token: data?.token, user: data?.user}));
       addToast("Success!", "success", 3000);
       navigate("/");
     } catch (e) {

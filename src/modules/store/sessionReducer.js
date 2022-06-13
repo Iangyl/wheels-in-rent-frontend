@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   token: '',
+  user: {},
 }
 
 export const sessionReducer = createSlice({
@@ -11,9 +12,10 @@ export const sessionReducer = createSlice({
   reducers: {
     login: (state, action) => {
       state.token = action.payload.token;
+      state.user = action.payload.user;
     },
     logout: (state) => {
-      state.token = initialState.token;
+      state = initialState;
     },
   },
 });
