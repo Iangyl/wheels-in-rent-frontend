@@ -5,6 +5,7 @@ import styles from "./index.module.scss";
 import routes from "../../modules/routes/routes";
 
 const AuthForm = ({
+  tel,
   name,
   email,
   password,
@@ -38,7 +39,7 @@ const AuthForm = ({
           </>
         )}
       </div>
-      <form className={styles.form} onSubmit={event => handleSubmit(event)}>
+      <form className={styles.form} onSubmit={(event) => handleSubmit(event)}>
         {formType !== "sign_in" ? (
           <input
             value={name}
@@ -46,7 +47,7 @@ const AuthForm = ({
             type="text"
             placeholder="Name"
             className={styles.name}
-            onChange={e => handleChange(e)}
+            onChange={(e) => handleChange(e)}
           />
         ) : (
           ""
@@ -57,15 +58,27 @@ const AuthForm = ({
           type="email"
           placeholder="Email"
           className={styles.email}
-          onChange={e => handleChange(e)}
+          onChange={(e) => handleChange(e)}
         />
+        {formType !== "sign_in" ? (
+          <input
+            value={tel}
+            name="tel"
+            type="tel"
+            placeholder="Tel"
+            className={styles.tel}
+            onChange={(e) => handleChange(e)}
+          />
+        ) : (
+          ""
+        )}
         <input
           value={password}
           name="password"
           type="password"
           placeholder="Password"
           className={styles.password}
-          onChange={e => handleChange(e)}
+          onChange={(e) => handleChange(e)}
         />
         {formType !== "sign_in" ? (
           <input
@@ -74,7 +87,7 @@ const AuthForm = ({
             type="password"
             placeholder="Confirm password"
             className={styles.password}
-            onChange={e => handleChange(e)}
+            onChange={(e) => handleChange(e)}
           />
         ) : (
           ""

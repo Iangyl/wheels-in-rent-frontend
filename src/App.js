@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import routes from "./modules/routes/routes";
+import { useAppSelector } from "./modules/store/hooks";
 import {
   Home,
   Fleet,
@@ -16,13 +17,25 @@ import {
 } from "./pages";
 
 const App = () => {
-  const user = "user";
+  const session = useAppSelector(state => state.session);
   const ProtectedRoute = ({
-    user,
+    role,
     redirectPath = routes.SIGN_IN,
     children,
   }) => {
-    if (!user) {
+    if (!role && role !== 'ADMIN') {
+      return <Navigate to={redirectPath} replace />;
+    }
+
+    return children;
+  };
+
+  const AuthorizedRoute = ({
+    token,
+    redirectPath = routes.SIGN_IN,
+    children,
+  }) => {
+    if (!token) {
       return <Navigate to={redirectPath} replace />;
     }
 
@@ -48,7 +61,7 @@ const App = () => {
         <Route
           path={routes.ACCOUNT}
           element={
-            <ProtectedRoute user={user}>
+            <ProtectedRoute session={session.role}>
               <AdminPage />
             </ProtectedRoute>
           }
@@ -56,7 +69,7 @@ const App = () => {
         <Route
           path={routes.ADMIN_DASHBOARD}
           element={
-            <ProtectedRoute user={user}>
+            <ProtectedRoute session={session.role}>
               <AdminPage />
             </ProtectedRoute>
           }
@@ -64,7 +77,7 @@ const App = () => {
         <Route
           path={routes.DATA_ADMINISTRATION}
           element={
-            <ProtectedRoute user={user}>
+            <ProtectedRoute session={session.role}>
               <AdminPage />
             </ProtectedRoute>
           }

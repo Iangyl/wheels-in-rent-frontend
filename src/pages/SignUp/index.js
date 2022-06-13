@@ -9,38 +9,29 @@ import { AuthForm, HeaderEmpty, LottiePlayer } from "../../components";
 const { formTypes, authLottieOptions } = constants;
 
 const SignUp = () => {
-  const {addToast} = useToast();
+  const { addToast } = useToast();
   const [formData, setFormData] = useState({
+    tel: "",
     name: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
     try {
-      const data = await signUp(formData);
-      if (data !== "Ok") {
+      const { data } = await signUp(formData);
+      if (data.message !== "Success") {
         new Error(data);
-        addToast(
-          `Error: ${data.message}`,
-          'error',
-          3000
-        )
+        addToast(`Error: ${data.message}`, "error", 3000);
       }
-        
-      addToast(
-        'Success!',
-        'success',
-        3000
-      )
+
+      addToast("Success!", "success", 3000);
     } catch (e) {
       console.error(e);
-      addToast(
-        `Error: ${e.message}`,
-        'error',
-        3000
-      )
+      addToast(`Error: ${e.message}`, "error", 3000);
     }
   };
 
