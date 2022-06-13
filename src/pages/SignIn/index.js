@@ -1,12 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import styles from "./index.module.scss";
 import { constants } from "../../utils";
 import { animations } from "../../assets";
+import { signIn } from "../../api/auth";
+import { login } from "../../modules/store/sessionReducer";
+import { useAppDispatch } from "../../modules/store/hooks";
+import { useToast } from "../../components/ToastProvider";
 import { AuthForm, HeaderEmpty, LottiePlayer } from "../../components";
 
-const {formTypes, authLottieOptions} = constants;
+const { formTypes, authLottieOptions } = constants;
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const {addToast} = useToast();
+  const dispatch = useAppDispatch();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = async () => {
+    try {
+      console.log('auu')
+      const data = await signIn(formData);
+      dispatch(login(data.token));
+      addToast(
+        'Success!',
+        'success',
+        3000
+      )
+      navigate('/');
+    } catch (e) {
+      console.error(e)
+      addToast(
+        `Error: ${e.message}`,
+        'error',
+        3000
+      )
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value.trim(),
+    });
+  };
+
   return (
     <div className={styles.SignIn}>
       <HeaderEmpty />
@@ -18,7 +60,12 @@ const SignIn = () => {
           />
         </div>
         <div className={styles.content}>
-          <AuthForm formType={formTypes.signIn} />
+          <AuthForm
+            {...formData}
+            formType={formTypes.signIn}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          />
         </div>
       </div>
     </div>

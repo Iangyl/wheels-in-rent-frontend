@@ -18,6 +18,9 @@ import repair from './repair.svg';
 import keyTransfer from './accepted.svg';
 import pending from './pending.svg';
 import orderError from './orderError.svg';
+import error from './error.svg';
+import success from './success.svg';
+import warning from './warning.svg';
 
 export {
   user,
@@ -40,4 +43,7 @@ export {
   ok,
   repair,
   blocked,
+  error,
+  success,
+  warning
 };

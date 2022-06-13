@@ -8,8 +8,8 @@ const AuthForm = ({
   name,
   email,
   password,
-  onSubmit,
-  onChange,
+  handleSubmit,
+  handleChange,
   confirmPassword,
   formType,
 }) => {
@@ -38,35 +38,43 @@ const AuthForm = ({
           </>
         )}
       </div>
-      <form className={styles.form} onSubmit={onSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         {formType !== "sign_in" ? (
           <input
             value={name}
+            name="name"
             type="text"
             placeholder="Name"
             className={styles.name}
+            onChange={e => handleChange(e)}
           />
         ) : (
           ""
         )}
         <input
           value={email}
+          name="email"
           type="email"
           placeholder="Email"
           className={styles.email}
+          onChange={e => handleChange(e)}
         />
         <input
           value={password}
+          name="password"
           type="password"
           placeholder="Password"
           className={styles.password}
+          onChange={e => handleChange(e)}
         />
         {formType !== "sign_in" ? (
           <input
             value={confirmPassword}
+            name="confirmPassword"
             type="password"
             placeholder="Confirm password"
             className={styles.password}
+            onChange={e => handleChange(e)}
           />
         ) : (
           ""

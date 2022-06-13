@@ -7,16 +7,19 @@ import './styles/selectSearch.scss';
 import './styles/pagination.scss';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { PersistGate } from 'redux-persist/integration/react'
-import {Provider} from 'react-redux';
-import {store, persistor} from './modules/storage';
+import { PersistGate } from 'reduxjs-toolkit-persist/lib/integration/react';
+import { ToastProvider } from './components';
+import { Provider } from 'react-redux';
+import { store, persistor } from './modules/store/store';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <App />
+        <PersistGate loading={null} persistor={persistor}>
+          <ToastProvider>
+            <App />
+          </ToastProvider>
         </PersistGate>
       </Provider>
     </BrowserRouter>

@@ -1,0 +1,26 @@
+.ModalLoader {
+	max-width: 640px;
+	width: 100%;
+	background-color: var(--dark4-col);
+	padding: 42px 80px;
+	border-radius: 20px;
+	border: 1.5px solid rgba(167, 167, 167, 0.7);
+	margin: 0 auto;
+	.modalTitleContainer {
+		text-align: center;
+		color: var(--white-col);
+		.modalTitle {
+			margin-bottom: 16px;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 48.41px;
+		}
+		.modalSubtitle {
+			margin-bottom: 52px;
+			font-size: 20px;
+			line-height: 32px;
+			font-weight: 400;
+			opacity: 0.5;
+		}
+	}
+}

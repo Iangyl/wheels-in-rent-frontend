@@ -1,0 +1,12 @@
+.notificationWrapper {
+  position: fixed;
+	right: 60px;
+	top: 10px;
+	z-index: 101;
+}
+	
+@media screen and (max-width: 425px) {
+  .notificationWrapper {
+    right: 10px;
+  }
+}
