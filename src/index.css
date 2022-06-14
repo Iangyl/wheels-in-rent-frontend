@@ -73,3 +73,16 @@ textarea {
   box-shadow: none;
   outline: none;
 }
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background-col);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #29ca8e;
+  border: 1px solid #29ca8e;
+}
