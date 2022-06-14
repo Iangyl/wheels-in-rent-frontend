@@ -15,7 +15,8 @@ export const sessionReducer = createSlice({
       state.user = action.payload.user;
     },
     logout: (state) => {
-      state = initialState;
+      state.token = '';
+      state.user = {};
     },
   },
 });

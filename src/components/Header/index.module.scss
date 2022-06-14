@@ -65,5 +65,25 @@
         margin-right: 5px;
       }
     }
+    .logout {
+      display: block;
+      max-width: 220px;
+      margin: 0 auto;
+      width: 100%;
+      height: 26px;
+      padding: 2px 8px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--white-col);
+      box-shadow: none;
+      border-radius: 5px;
+      background-color: var(--dark2-col);
+      margin-left: 19px;
+    }
+    .logout:hover {
+      color: var(--dark2-col);
+      background-color: var(--background3-col);
+      border: 1px solid var(--dark2-col);
+    }
   }
 }
